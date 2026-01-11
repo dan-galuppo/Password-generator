@@ -3,24 +3,19 @@
 <html>
     <head>
 		<meta charset="UTF-8">
-		<title>Exercise Password generator</title>
+		<title>Generatore di password</title>
         <link rel="stylesheet" href="styles.css">
 		<script src="script.js" defer></script>
     </head>
     <body>
         <mainContainer>
-            <h1>Generate a</br> 
-            <span class="h1Color">random password</span></h1>
-            <p>Never use an insecure password again.</p>
-              <label for="fname">Set password length:</label>
+            <h1>Genera una</br> 
+            <span class="h1Color">password casuale</span></h1>
+            <label for="fname">Imposta la lunghezza della password:</label>
             <input id="len-el" type="number" name="number" min="8" max="15" value="12" required><br>
-            
-            <button id="genpswd-btn">Generate passwords</button>
+            <button id="genpswd-btn">Genera la password</button>
             <hr class="areaDivision">
-            <pswdWrapper>
-                <p class="pswdArea" id="pswd1-el"></p>
-                <p class="pswdArea" id="pswd2-el"></p>
-            </pswdWrapper>
+            <p class="pswdArea" id="pswd1-el"></p>
         </mainContainer>
     </body>
 </html>

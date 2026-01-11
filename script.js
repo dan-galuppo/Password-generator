@@ -4,7 +4,6 @@
 /* 1) Costanti DOM (riferimenti agli elementi HTML)*/
 const genPswdBtn = document.getElementById("genpswd-btn")
 const pswd1El = document.getElementById("pswd1-el");
-const pswd2El = document.getElementById("pswd2-el");
 const lenEl = document.getElementById("len-el");
 
 /* 2) Stato (variabili che rappresentano i dati dell’app)*/
@@ -33,10 +32,8 @@ function getRandomChar() {
 function genPassword(){
     const lenPswd = Number(lenEl.value);
     pswd1El.textContent=""
-    pswd2El.textContent=""
     for (let i = 0; i < lenPswd; i += 1) {
         pswd1El.textContent += getRandomChar()
-        pswd2El.textContent += getRandomChar()
     }
 }
 
