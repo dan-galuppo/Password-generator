@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>Exercise Password generator</title>
+        <link rel="stylesheet" href="styles.css">
+		<script src="script.js" defer></script>
+    </head>
+    <body>
+        <mainContainer>
+            <h1>Generate a</br> 
+            <span class="h1Color">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+              <label for="fname">Set password length:</label>
+            <input id="len-el" type="number" name="number" min="8" max="15" value="12" required><br>
+            
+            <button onclick="genPassword()">Generate passwords</button>
+            <hr class="areaDivision">
+            <pswdWrapper>
+                <p class="pswdArea" id="pswd1-el"></p>
+                <p class="pswdArea" id="pswd2-el"></p>
+            </pswdWrapper>
+        </mainContainer>
+    </body>
+</html>
