@@ -2,6 +2,7 @@
 'use strict';
 
 /* 1) Costanti DOM (riferimenti agli elementi HTML)*/
+const genPswdBtn = document.getElementById("genpswd-btn")
 const pswd1El = document.getElementById("pswd1-el");
 const pswd2El = document.getElementById("pswd2-el");
 const lenEl = document.getElementById("len-el");
@@ -21,6 +22,8 @@ const characters = [
 /*xxxXxxx.textContent = "yyy";*/
 
 /* 4) Funzioni (logica riutilizzabile)*/
+
+genPswdBtn.addEventListener("click",genPassword)
 
 function getRandomChar() {
     let randomNumber = Math.floor(Math.random()*characters.length)
